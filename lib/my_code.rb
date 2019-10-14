@@ -10,6 +10,8 @@ def map(source_array)
 end
   
 def reduce(source_array, starting_point = nil)
-  if sv
+  if starting_point
+    num1 = starting_point
+    counter = 0 
     
 end
