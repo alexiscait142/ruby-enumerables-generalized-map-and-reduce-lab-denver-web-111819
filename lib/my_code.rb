@@ -18,6 +18,8 @@ def reduce(source_array, starting_point = nil)
     counter = 1 
   end 
   while counter < source_array.length 
-    yield(total, source_array[counter])
+    total = yield(total, source_array[counter])
+    counter += 1
   end
+  total
 end
